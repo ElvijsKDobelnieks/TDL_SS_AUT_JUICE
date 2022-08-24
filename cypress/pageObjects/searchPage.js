@@ -10,18 +10,11 @@ class searchPage extends BasePage {
     static get searchField() {
         return cy.get("#mat-input-0")
     }
-    static get lemonJuice() {
+    static get lemonJuice1() {
         return cy.get(".mat-card.mat-focus-indicator");
     }
-    static get lemonJuice2() {
-        return cy.get("[alt='Lemon Juice (500ml)']")
-    }
-    static get lemonJuiceClicked() {
+    static get lemonJuice1Clicked() {
         return cy.get("#mat-dialog-1");
     }
-    static get closeDiaglogInSearch() {
-        return cy.get("#mat-dialog-1")
-    }
-    // .cdk-dialog-container.ng-tns-c141-17
 }
 export default searchPage;
